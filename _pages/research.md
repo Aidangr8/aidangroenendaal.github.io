@@ -6,4 +6,11 @@ redirect_from:
   - /research.html
 ---
 
-Over the summer, I had the oppurtunity to join Northwestern's Laboratory for Atomic and Photonic Technology (LAPT). For almost 20 years, work has been ongoing into creating extremely sensitivie ring laser gyrocopes. Instruments that can be used in meterology, navigation, astrophysics, and many other fields. My research focused on how to optimize the output of such a laser. 
+Over the summer, I had the oppurtunity to join Northwestern's Laboratory for Atomic and Photonic Technology (LAPT). For almost 20 years, work has been ongoing into creating extremely sensitivie ring laser gyrocopes (RLGs). Instruments that can be used in meterology, navigation, astrophysics, and many other fields. My research focused on how to optimize the output of such a laser. 
+
+Our RLG differs from others as we make use of an active cavity. We place a vapor cell containing the two stabes isotopes of rubidium into the RLGs cavity and rapidly excite and de-excite the atoms. This creates a dispersive medium, one where the index of refraction changes rapidly with frequency. Due to the way we tune the rubidium atoms, our system experiences negative dispersion, meaning the group velocity of the laser can exceed the vacuum speed of light without violating relativity. This creates a condition where the resonance frequency shift for a given cavity perturbation can be much larger than an empty cavity RLG, theoretically reaching upwards of 2000 times more sensitive. 
+
+In order to model the output of such a laser, we use an algorithm that iterativley solves the semi-classical laser equations and density-matrix equation simeltenously. (FIX TYPO). We first take an initial guess on the Rabi Frequency (intensity) and freqency of the Raman Laser. This returns the systems Hamiltonian, a matrix containing information about the intensities of the Raman Pumps as well as decay rates between ground levels. We then input this into the density matrix equation and solve for the density matrix. This gives information about population fractions in the rubidium and their coherences. From the density matrix, we can calculate the susceptibility of the medium, a measure of how polarized the material becomes due to an incoming electric field. Finally, this is given to the lasing equations. If the initial guess satisfies these equations, it is saved. If not, then a new guess is chosen and the process repeats. 
+
+
+
