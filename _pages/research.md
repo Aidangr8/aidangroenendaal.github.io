@@ -21,7 +21,8 @@ The second plot shows the maximum intensity of multiple simulations at different
 
 Below is a copy of the poster I presented at the end of the CIERA REU. 
 
-![Poster](/Picture1.png)
+![Poster](/images/Picture1.png)
+
 
 
 
